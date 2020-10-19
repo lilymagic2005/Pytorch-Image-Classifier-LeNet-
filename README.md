@@ -16,6 +16,17 @@ How to Run:
 -Put the "cifar10png" file inside the "data" folder
 https://drive.google.com/file/d/1d666e1DLtlAKk9D_P-aVkRB9P-jSV9AT/view?usp=
 
+Folder Arch:
+
+        Lconfig
+        Ldata
+        Ldataset
+        Lmodel
+        Lsaved
+        Ltrainer
+        test.py
+        train.py
+
 2. Run train.py
 
 (Optional) 
