@@ -24,6 +24,36 @@ https://drive.google.com/file/d/1d666e1DLtlAKk9D_P-aVkRB9P-jSV9AT/view?usp=
         num_of_epoch = 30
         batch_size = 32
         
+4. Result Log (lr = 0.005 , epoch = 24, bs= 32 , Model = lenet5)
+
+                Epoch 24/24
+                --------------------
+                train
+                batch num: 0 cost time: 0.025916099548339844
+                batch num: 100 cost time: 0.45509910583496094
+                batch num: 200 cost time: 0.42002367973327637
+                batch num: 300 cost time: 0.4263756275177002
+                batch num: 400 cost time: 0.42834019660949707
+                batch num: 500 cost time: 0.42302560806274414
+                batch num: 600 cost time: 0.4291098117828369
+                batch num: 700 cost time: 0.43551158905029297
+                batch num: 800 cost time: 0.41848182678222656
+                batch num: 900 cost time: 0.4343116283416748
+                batch num: 1000 cost time: 0.42071032524108887
+                train Loss: 0.5777 Acc: 0.7911
+                val
+                batch num: 0 cost time: 0.021633148193359375
+                batch num: 100 cost time: 0.4298257827758789
+                batch num: 200 cost time: 0.41722559928894043
+                batch num: 300 cost time: 0.43596792221069336
+                batch num: 400 cost time: 0.42412757873535156
+                val Loss: 1.5678 Acc: 0.5862
+                epoch complete in 0m 7s
+                Training complete in 2m 54s
+                Best val Acc: 0.6059
+
+                Process finished with exit code 0
+
 
 Details of the code:(TBW)
 1. Check model.py to see the details of the LeNet5
