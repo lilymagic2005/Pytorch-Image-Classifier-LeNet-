@@ -31,8 +31,4 @@ if __name__ == "__main__":
     criterion = nn.CrossEntropyLoss()
     data_loader = dataset.DataLoader()
 
-    # for inp, lab in data_loader.dataloaders_dict["train"]:
-    #     print(inp)
-    #     print(lab)
-
-    trainer.ModelTrainer.train_model(model,data_loader.dataloaders_dict,criterion,optimizer_ft, num_epochs=25,is_inception=False, model_save_path=os.path.join(config.model_save_path,"model.pth"))
+    trainer.ModelTrainer.train_model(model,data_loader.dataloaders_dict,criterion,optimizer_ft, num_epochs=config.num_of_epoch ,is_inception=False, model_save_path=os.path.join(config.model_save_path,"model.pth"))

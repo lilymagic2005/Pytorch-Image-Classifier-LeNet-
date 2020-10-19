@@ -8,25 +8,11 @@ from config import config
 image_normalize_mean = config.image_normalize_mean
 image_normalize_std = config.image_normalize_std
 
-
 class ImageDataProcess(object):
     def __init__(self):
         pass
-
     @staticmethod
-    def image_array_normalize(image_array, size=28):
-        image_array = cv2.resize(image_array, (size, size))
-        image_array = np.ascontiguousarray(image_array[..., ::-1], dtype=np.float32)
-        image_array = image_array.transpose((2, 0, 1))
-        for channel, _ in enumerate(image_array):
-            image_array[channel] /= 255.0
-            image_array[channel] -= image_normalize_mean[channel]
-            image_array[channel] /= image_normalize_std[channel]
-        image_tensor = torch.from_numpy(image_array).float()
-        return image_tensor
-
-    @staticmethod
-    def image_normalize(image, size=28):
+    def image_normalize(image, size=config.model_input_size):
         image_array = cv2.imread(image)
         image_array = cv2.resize(image_array, (size, size))
         image_array = np.ascontiguousarray(image_array[..., ::-1], dtype=np.float32)

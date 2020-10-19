@@ -5,8 +5,9 @@ from .data_preprocess import ImageDataProcess
 import os
 import config.config as config
 
-data_dir = "../data"
-batch_size = 10
+#data_dir = "./data/cifar10png"
+data_dir = config.data_dir
+batch_size = config.batch_size
 
 class TheDataset(Dataset):
     def __init__(self, img_path, img_label_dict):
