@@ -6,7 +6,8 @@ Difference between this repo and the tensorflow one:
 3. The Lenet Model may have some differences
 
 Requirements
-1. pytorch (https://pytorch.org/get-started/locally/ , if you do not have gpu , dont click cuda )
+1. pytorch (Available on pytorch-gpu 1.2.0 and pytorch 1.6)
+(https://pytorch.org/get-started/locally/ , if you do not have gpu , dont click cuda )
 2. opencv  (pip install opencv-python)
 
 How to Run:
